@@ -1,0 +1,12 @@
+{
+  "name": "ot-segmentation",
+  "description": "Revisa la segmentación de una red industrial según IEC 62443 y el modelo Purdue: zonas, conductos, protocolos industriales que cruzan zonas, accesos remotos y caminos directos de IT a la planta",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ulises Pignatelli",
+    "url": "https://github.com/ulisespignatelli"
+  },
+  "homepage": "https://github.com/ulisespignatelli/ot-security-skills",
+  "license": "MIT",
+  "keywords": ["ot", "ics", "scada", "iec-62443", "purdue", "segmentation", "firewall"]
+}

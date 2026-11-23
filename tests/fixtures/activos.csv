@@ -1,0 +1,17 @@
+name,ip,type,level,zone,criticality,notes
+PLC-Filtros,10.10.1.10,plc,,Celda Filtrado,high,Siemens S7-1500 (ficticio)
+PLC-Bombas,10.10.1.11,plc,,Celda Bombeo,high,Rockwell ControlLogix (ficticio)
+RTU-Tanque,10.10.1.20,rtu,,Celda Bombeo,medium,DNP3
+SIS-Cloro,10.10.9.5,sis,,,high,Sistema de seguridad de dosificación
+HMI-Sala,10.10.2.10,hmi,,Supervisión,high,
+SCADA-01,10.10.2.20,scada-server,,Supervisión,high,
+EWS-Ing,10.10.2.30,eng-workstation,,Supervisión,high,Estación de ingeniería
+EWS-SIS,10.10.9.10,eng-workstation,,SIS,high,Estación de ingeniería de seguridad
+Historian,10.10.3.10,historian,,Operaciones,medium,
+OT-AD,10.10.3.5,ot-ad,,Operaciones,medium,
+Jump-DMZ,172.16.0.10,jump-host,,DMZ,high,
+Hist-Mirror,172.16.0.20,historian-mirror,,DMZ,medium,
+VPN-GW,172.16.0.2,remote-access-gateway,,DMZ,high,
+ERP,192.168.50.10,erp,,,medium,
+Oficinas,192.168.60.0/24,workstation,,,low,PCs de oficina
+FW-OT,10.10.0.1,firewall,,,high,

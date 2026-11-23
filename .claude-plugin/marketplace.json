@@ -1,0 +1,15 @@
+{
+  "name": "ulises-ot-security",
+  "description": "Skills de ciberseguridad para redes industriales (OT/ICS)",
+  "owner": {
+    "name": "Ulises Pignatelli",
+    "url": "https://github.com/ulisespignatelli"
+  },
+  "plugins": [
+    {
+      "name": "ot-segmentation",
+      "source": "./plugins/ot-segmentation",
+      "description": "Revisa la segmentación de una red industrial según IEC 62443 y el modelo Purdue, a partir del inventario y las reglas de firewall"
+    }
+  ]
+}
