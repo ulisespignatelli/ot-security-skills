@@ -11,13 +11,17 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # Versión mínima soportada (3.10, en Ubuntu 24.04) y la última estable (en el runner actual).
     strategy:
+      fail-fast: false
       matrix:
-        python: ["3.9", "3.12"]
+        include:
+          - { os: ubuntu-24.04, python: "3.10" }
+          - { os: ubuntu-latest, python: "3.x" }
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - name: Tests
@@ -45,7 +49,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Empaquetar skills
         run: |
           mkdir -p dist

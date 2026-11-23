@@ -26,7 +26,7 @@ Antes de justificar un hallazgo o proponer una arquitectura, leé `references/ie
 
 2. **Preguntar el contexto mínimo**, en un solo mensaje y solo si no está claro: qué equipos son de seguridad funcional (SIS) y cuáles son críticos para el proceso. Si hay accesos de proveedores, preguntá por dónde entran.
 
-3. **Correr el script** (Python 3.9+, solo biblioteca estándar; la ruta es relativa a la carpeta de esta skill):
+3. **Correr el script** (Python 3.10+, solo biblioteca estándar; la ruta es relativa a la carpeta de esta skill):
    ```bash
    python3 scripts/ot_review.py --assets activos.csv --flows reglas.csv --out-dir ot-review-out
    ```
